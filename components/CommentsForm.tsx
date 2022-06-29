@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { submitComment } from '../services'
 
-const CommentsForm = ({ slug }) => {
+const CommentsForm = ({ slug }: { slug: any }) => {
   const [error, setError] = useState(false)
   const [localStorage, setLocalStorage] = useState(null)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
@@ -24,7 +24,7 @@ const CommentsForm = ({ slug }) => {
     setFormData(initalFormData)
   }, [])
 
-  const onInputChange = (e) => {
+  const onInputChange = (e: any) => {
     const { target } = e
     if (target.type === 'checkbox') {
       setFormData((prevState) => ({

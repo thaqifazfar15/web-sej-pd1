@@ -3,7 +3,7 @@ import moment from 'moment'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const FeaturedPostCard = ({ post }) => (
+const FeaturedPostCard = ({ post }: { post: any }) => (
   <div className="relative h-72">
     <div
       className="absolute inline-block h-72 w-full rounded-lg bg-cover bg-center bg-no-repeat shadow-md"
