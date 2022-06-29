@@ -2,8 +2,8 @@ import React from 'react'
 
 import moment from 'moment'
 
-const PostDetail = ({ post }) => {
-  const getContentFragment = (index, text, obj, type) => {
+const PostDetail = ({ post }: any) => {
+  const getContentFragment = (index: any, text: any, obj: any, type: any) => {
     let modifiedText = text
 
     if (obj) {
@@ -24,7 +24,7 @@ const PostDetail = ({ post }) => {
       case 'heading-three':
         return (
           <h3 key={index} className="mb-4 text-xl font-semibold">
-            {modifiedText.map((item, i) => (
+            {modifiedText.map((item: any, i: any) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </h3>
@@ -32,7 +32,7 @@ const PostDetail = ({ post }) => {
       case 'paragraph':
         return (
           <p key={index} className="mb-8">
-            {modifiedText.map((item, i) => (
+            {modifiedText.map((item: any, i: any) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </p>
@@ -40,7 +40,7 @@ const PostDetail = ({ post }) => {
       case 'heading-four':
         return (
           <h4 key={index} className="text-md mb-4 font-semibold">
-            {modifiedText.map((item, i) => (
+            {modifiedText.map((item: any, i: any) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
           </h4>
@@ -72,7 +72,7 @@ const PostDetail = ({ post }) => {
         </div>
         <div className="px-4 lg:px-0">
           <div className="mb-8 flex w-full items-center">
-            <div className="mr-8 hidden items-center items-center justify-center md:flex lg:mb-0 lg:w-auto">
+            <div className="mr-8 hidden items-center justify-center md:flex lg:mb-0 lg:w-auto">
               <img
                 alt={post.author.name}
                 height="30px"
@@ -105,8 +105,8 @@ const PostDetail = ({ post }) => {
             </div>
           </div>
           <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-          {post.content.raw.children.map((typeObj, index) => {
-            const children = typeObj.children.map((item, itemindex) =>
+          {post.content.raw.children.map((typeObj: any, index: any) => {
+            const children = typeObj.children.map((item: any, itemindex: any) =>
               getContentFragment(itemindex, item.text, item)
             )
 
