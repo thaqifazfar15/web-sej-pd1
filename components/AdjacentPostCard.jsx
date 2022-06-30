@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 
-const AdjacentPostCard = ({ post, position }: { post: any; position: any }) => (
+const AdjacentPostCard = ({ post, position }) => (
   <>
     <div
       className="absolute inline-block h-72 w-full rounded-lg bg-cover bg-center bg-no-repeat shadow-md"

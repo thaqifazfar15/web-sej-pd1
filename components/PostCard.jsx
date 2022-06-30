@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 
-function PostCard({ post }: any) {
+function PostCard({ post }) {
   console.log(post)
   return (
     <div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">

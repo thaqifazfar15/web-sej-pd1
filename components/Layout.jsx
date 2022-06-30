@@ -1,7 +1,7 @@
 import React from 'react'
-import { Header } from './'
+import { Header } from '.'
 
-function Layout({ children }: any) {
+function Layout({ children }) {
   return (
     <>
       <Header />

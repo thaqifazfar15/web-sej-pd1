@@ -5,7 +5,7 @@ import { getSortedRoutes } from 'next/dist/shared/lib/router/utils'
 
 import { getRecentPosts, getSimilarPosts } from '../services'
 
-function PostWidget({ categories, slug }: { categories: any; slug: any }) {
+function PostWidget({ categories, slug }) {
   const [relatedPosts, setRelatedPosts] = useState([])
 
   useEffect(() => {
