@@ -1,15 +1,15 @@
-# Website Sejarah Perang Dunia 1
+# Website Projek SEBAYU (Sejarah Bahasa Melayu)
 
-## Live Preview (Not Avaiable)
+Program SEBAYU merupakan minggu Sejarah dan Bahasa Melayu yang dianjurkan oleh Pusat GENIUS@Pintar Negara. Program ini berlangsung selama 2 hari iaitu bermula pada 29 Jun 2022 dan berakhir pada 30 Jun 2022. Tema yang kumpulan saya dapat ialah Perang Dunia dan tajuk yang kami pilih ialah Kesan Baik dan Buruk Berlakunya Perang Dunia.
 
-[Here](www.google.com)
+## Live Preview
 
-## Command To Start Local Website
+[Projek SEBAYU: Perang Dunia](https://project-sebayu.vercel.app/)
 
-```
-npm run dev
-```
+## Technologies Used
 
-## Acknowledgements
-
-- [Screensaver vector created by freepik](https://www.freepik.com/vectors/screensaver)
+- JavaScript
+- Typescript
+- Tailwind CSS
+- GraphQL
+- Git
