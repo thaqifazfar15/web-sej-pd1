@@ -88,3 +88,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.text-wrap-container {
+  overflow-wrap: break-word;
+}

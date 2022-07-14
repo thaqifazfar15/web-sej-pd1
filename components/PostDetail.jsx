@@ -70,7 +70,7 @@ const PostDetail = ({ post }) => {
             className="h-full w-full rounded-t-lg object-cover  object-top shadow-lg lg:rounded-lg"
           />
         </div>
-        <div className="px-4 lg:px-0">
+        <div className="text-wrap-container px-4 lg:px-0">
           <div className="mb-8 flex w-full items-center">
             <div className="mr-8 hidden items-center justify-center md:flex lg:mb-0 lg:w-auto">
               <img
